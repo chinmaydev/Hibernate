@@ -1,0 +1,32 @@
+1.dialect not set - add cfg file and call configure
+2.MappingException - add @Entity, call addAnnotatedClass
+3.No identifier specified for entity - add @Id
+4.  table or view does not exist - add hbm2ddl
+5.hbm2ddl.auto -  create(Drops existing table, Creates a new  table everytime)
+		          update( Creates a new  table only when table doesnt exist)
+		          validate (validates)
+		          create-drop: drop the schema when the SessionFactory is closed explicitly, typically when the application is stopped.
+		          none: does nothing with the schema, makes no changes to the database
+		          
+		          
+6.Annotations- @Table,@Column,@Transient. @Table name vs @Entity name
+
+7.Adding @Table, creates a new Table but @Column,@Transient doesnt		
+
+8.For fetching, transaction is not required     
+
+9.@Embedable
+
+10. Mapping - @OneToOne,@OneToMany,@ManyToOne,@ManyToMany - mappedBy,targetEntity,@JoinColumn
+
+11. Eager/Lazy fetch
+
+12.Caching -level 1(by default, exist for single session) , level 2(Need to specify,global in session factory scope)
+CacheConcurrencyStrategy.READ_WRITE
+
+13.State of Obj - Transient,Persistance(after save or update), Detached(after detach or commit),Removed	
+
+14.get vs load
+
+15. HQL
+     
